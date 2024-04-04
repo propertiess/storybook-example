@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-bg-color: #006ada;
+  --main-color: #12121c;
+  --secondary-bg-color: #222233;
+  --secondary-text-color: #88888d;
+  --lime-color: #57efb4;
+}
+
+html,
+body,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @apply bg-main text-white;
+}
+
+#root {
+  @apply flex min-h-screen min-w-fit flex-col;
+}
+
+li,
+a {
+  @apply focus:outline-0;
+}
